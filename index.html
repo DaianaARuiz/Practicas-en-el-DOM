@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es" data-dark>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicas DOM</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="header">
+      <h1>Vamo' a practicar con el DOM</h1>
+    </header>
+    <button class="panel-btn hamburger hamburger--3dx" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <aside class="panel">
+        <nav class="menu">
+            <a href="#section01">Reloj Digital y Alarma sonora</a>
+            <a href="#section02">Eventos del teclado</a>
+            <a href="#section03">Cuenta Regresiva</a>
+            <a href="#section04">Responsive Design con JavaScript</a>
+            <a href="#section05">Responsive tester</a>
+            <a href="#section06">Detección de dispositivos<br>(USER AGENT)</a>
+            <a href="#section07">Detección de la conexión</a>
+            <a href="#section08">Detección de la camara web</a>
+            <a href="#section09">Geolocalización</a>
+            <a href="#section10"> Filtros de Búsquedas</a>
+            <a href="#section11">Sorteo Digital</a>
+            <a href="#section12">Geolocalización</a>
+            <a href="#section13">Geolocalización</a>
+            <a href="#section14">Geolocalización</a>
+
+           
+        </nav>
+    </aside>
+    <main>
+        <section id="section01" class="section">
+            <h2>Reloj Digital y Alarma sonora</h2>
+            <div id="reloj"></div>
+            <div>
+                <!-- alarm-clock.mp3 -->
+                <button id="activar-reloj">Iniciar reloj</button>
+                <button id="desactivar-reloj">Detener reloj</button>
+                <button id="activar-alarma">Iniciar alarma</button>
+                <button id="desactivar-alarma">Detener alarma</button>
+            </div>
+        </section>
+        <section id="section02" class="section">
+            <h2>Eventos del teclado</h2>
+            <article class="stage">
+                <div class="ball"></div>
+            </article>
+        </section>
+        <section id="section03" class="section">
+            <h2>Cuenta Regresiva</h2>
+            <div id="countdown"></div>
+        </section>
+        <section id="section04" class="section">
+            <h2>Responsive Design con JavaScript</h2>
+            <div id="youtube"></div>
+            <div id="gmaps"></div>
+        </section>
+        <section id="section05" class="section">
+            <h2>Responsive tester</h2>
+            <form id="responsive-tester">
+                <input name="direccion" type="url" placeholder="URL"required>
+                <br>
+                <input name="ancho" type="text" placeholder="Ancho"required>
+                <br>
+                <input name="largo" type="text" placeholder="Largo"required>
+                <br>
+                <input type="submit" name="probar" value="Probar">
+                <input type="button" name="cerrar" value="Cerrar">
+            </form>
+        </section>
+        <section id="section06" class="section">
+            <h2>Detección de dispositivos<br>(USER AGENT)</h2>
+            <div id="user-device"></div>
+        </section>
+        <section id="section07" class="section">
+            <h2>Detección de la conexión</h2>
+        </section>
+        <section id="section08" class="section">
+            <h2>Detección de la camara web</h2>
+            <video id="webcam" controls></video>
+        </section>
+        <section id="section09" class="section">
+            <h2>Geolocalización</h2>
+            <div id="geolocation"></div>   
+        </section>
+        <section id="section10" class="section">
+            <h2>Filtros de Búsquedas</h2>
+           <input type="search" placeholder="Buscar..." class="card-filter">
+           <article class="cards">
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/tech" alt="Tech">
+                    <figcaption>Tech</figcaption>
+              </figure>
+              <figure class="card">
+                <img src="https://placeimg.com/200/200/animals" alt="Animals">
+                <figcaption>Animals</figcaption>
+              </figure>
+              <figure class="card">
+                <img src="https://placeimg.com/200/200/arch" alt="Architecture">
+                <figcaption>Architecture</figcaption>
+              </figure>
+              <figure class="card">
+                <img src="https://placeimg.com/200/200/people" alt="People">
+                <figcaption>People</figcaption>
+              </figure>
+              <figure class="card">
+                <img src="https://placeimg.com/200/200/nature" alt="Nature">
+                <figcaption>Nature</figcaption>
+              </figure>
+              <figure class="card">
+                <img src="https://placeimg.com/200/200/any" alt="Any">
+                <figcaption>Any</figcaption>
+              </figure>
+           </article>
+        </section>
+        <section id="section11" class="section">
+            <h2>¿Qúe sigue?</h2>
+            <ul class="players">
+                <li class="player">JavaScript</li>
+                <li class="player">PHP</li>
+                <!-- <li class="player">JAVA</li>
+                <li class="player">React</li>
+                <li class="player">Node JS</li>
+                <li class="player">Angular</li>
+                <li class="player">Python</li>
+                <li class="player">Bootstrap</li>
+                <li class="player">.NET</li>
+                <li class="player">C#</li> -->
+            </ul>
+            <button id="winner-btn">Obtener Ganador</button>
+        </section>
+        <section id="section12" class="section">
+            <h2></h2>
+        </section>
+         <section id="section13" class="section">
+            <h2></h2>
+        </section>
+        <section id="section14" class="section">
+            <h2></h2>
+        </section>
+    </main>
+    <button class="scroll-to-btn hidden">&#11014;</button>
+    <button class="dark-theme-btn">🌙</button>    
+    <script src="js/main.js" type="module"></script>
+  
+</body>
+</html>
